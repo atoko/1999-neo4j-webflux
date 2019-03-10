@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "4d269cf7-8973-418e-b8e2-a321d7da579e",
+		"name": "matrix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/query/Banner/KROGER",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "localhost:8080/query/Banner/KROGER"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/persons/8986252410/IS_SUBSCRIBED_TO_CUPON_MAILER",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"type\": \"Banner\",\n\t\"value\": \"Kroger\"\n}"
+				},
+				"url": "localhost:8080/persons/8986252410/IS_SUBSCRIBED_TO_CUPON_MAILER"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/persons/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"guid\":\"8986252410\", \"name\": \"steven\", \"email\":\"steve@mailinator.com\"}"
+				},
+				"url": "localhost:8080/persons/"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/persons/5982546820",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "localhost:8080/persons/5982546820"
+			},
+			"response": []
+		}
+	]
+}

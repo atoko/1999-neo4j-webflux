@@ -1,0 +1,1 @@
+CREATE CONSTRAINT ON (person:Person) ASSERT person.guid IS UNIQUE
